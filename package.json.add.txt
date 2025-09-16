@@ -1,0 +1,8 @@
+devdep:
+@chainlink/local
+prettier
+prettier-plugin-solidity
+solidity-coverage
+
+dep:
+dotenv
