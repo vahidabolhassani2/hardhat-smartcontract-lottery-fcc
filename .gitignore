@@ -16,3 +16,12 @@ node_modules
 #!.yarn/cache
 .pnp.*
 .env
+
+artifacts/*
+artifacts/contracts/*
+artifacts/build-info/*
+
+cache/*
+_temp
+package.json.add.txt
+
