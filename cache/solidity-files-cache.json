@@ -2,9 +2,54 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\contracts\\Raffle.sol": {
-      "lastModificationDate": 1758028815037,
-      "contentHash": "c2b7b438acf7bc672297849bcdb64a49",
+      "lastModificationDate": 1758612253612,
+      "contentHash": "4b9317e030a1fc2474149f315dffbd68",
       "sourceName": "contracts/Raffle.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol",
+        "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.7"
+      ],
+      "artifacts": [
+        "Raffle"
+      ]
+    },
+    "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vrf\\dev\\libraries\\VRFV2PlusClient.sol": {
+      "lastModificationDate": 1758026754103,
+      "contentHash": "ea0b191b25011f4be7f27a1ccf579259",
+      "sourceName": "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol",
       "solcConfig": {
         "version": "0.8.7",
         "settings": {
@@ -37,10 +82,315 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.7"
+        "^0.8.4"
       ],
       "artifacts": [
-        "Raffle"
+        "VRFV2PlusClient"
+      ]
+    },
+    "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vrf\\dev\\VRFConsumerBaseV2Plus.sol": {
+      "lastModificationDate": 1758026754057,
+      "contentHash": "b79fe960e5c1708710e8903cb2596a05",
+      "sourceName": "@chainlink/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IVRFCoordinatorV2Plus.sol",
+        "./interfaces/IVRFMigratableConsumerV2Plus.sol",
+        "../../shared/access/ConfirmedOwner.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "VRFConsumerBaseV2Plus"
+      ]
+    },
+    "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.8\\shared\\access\\ConfirmedOwner.sol": {
+      "lastModificationDate": 1758026750534,
+      "contentHash": "1ed782c1e3014a255f9171aefc3cdde3",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ConfirmedOwnerWithProposal.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConfirmedOwner"
+      ]
+    },
+    "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vrf\\dev\\interfaces\\IVRFMigratableConsumerV2Plus.sol": {
+      "lastModificationDate": 1758026753875,
+      "contentHash": "c46a904727c33fe3465e4cf8957610c0",
+      "sourceName": "@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFMigratableConsumerV2Plus.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IVRFMigratableConsumerV2Plus"
+      ]
+    },
+    "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vrf\\dev\\interfaces\\IVRFCoordinatorV2Plus.sol": {
+      "lastModificationDate": 1758026753851,
+      "contentHash": "a40c594759ed60ae8b25c9878deb5190",
+      "sourceName": "@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/VRFV2PlusClient.sol",
+        "./IVRFSubscriptionV2Plus.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IVRFCoordinatorV2Plus"
+      ]
+    },
+    "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.8\\shared\\access\\ConfirmedOwnerWithProposal.sol": {
+      "lastModificationDate": 1758026750585,
+      "contentHash": "f29daa205dcbdc6037de8e38e5a34158",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IOwnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConfirmedOwnerWithProposal"
+      ]
+    },
+    "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.8\\shared\\interfaces\\IOwnable.sol": {
+      "lastModificationDate": 1758026750413,
+      "contentHash": "b3ae9b7345205a0a65f3e0f89c176d88",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOwnable"
+      ]
+    },
+    "D:\\Users\\vahid\\Documents\\Projects\\web3\\hh-fcc\\Lesson-09-hardhat-smartcontract-lottery-fcc\\hardhat-smartcontract-lottery-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vrf\\dev\\interfaces\\IVRFSubscriptionV2Plus.sol": {
+      "lastModificationDate": 1758026753877,
+      "contentHash": "3876d187ac359ff043ea8f248fe05800",
+      "sourceName": "@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFSubscriptionV2Plus.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IVRFSubscriptionV2Plus"
       ]
     }
   }
